@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="none">
+  <rect width="400" height="220" fill="transparent"/>
+  <!-- Kali -->
+  <rect x="60" y="80" width="60" height="40" rx="4" fill="currentColor" opacity="0.1"/>
+  <rect x="60" y="80" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+  <text x="90" y="105" font-family="monospace" font-size="9" fill="currentColor" text-anchor="middle" font-weight="700">KALI</text>
+  <line x1="120" y1="100" x2="160" y2="100" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="140" y="92" font-family="monospace" font-size="8" fill="#ff4d4d" text-anchor="middle" font-weight="700">SQLi</text>
+  <!-- SafeLine WAF -->
+  <rect x="160" y="70" width="80" height="60" rx="4" fill="#ffe66d"/>
+  <text x="200" y="95" font-family="monospace" font-size="9" fill="currentColor" text-anchor="middle" font-weight="700">SAFELINE</text>
+  <text x="200" y="110" font-family="monospace" font-size="8" fill="currentColor" text-anchor="middle" font-weight="700">WAF</text>
+  <line x1="240" y1="100" x2="280" y2="100" stroke="#4ecdc4" stroke-width="2"/>
+  <!-- DVWA -->
+  <rect x="280" y="80" width="60" height="40" rx="4" fill="currentColor" opacity="0.1"/>
+  <rect x="280" y="80" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+  <text x="310" y="105" font-family="monospace" font-size="9" fill="currentColor" text-anchor="middle" font-weight="700">DVWA</text>
+  <text x="60" y="150" font-family="monospace" font-size="10" fill="currentColor" font-weight="600" opacity="0.6">XSS blocked · brute-force denied</text>
+  <text x="60" y="168" font-family="monospace" font-size="10" fill="currentColor" font-weight="600" opacity="0.6">zero false positives</text>
+  <text x="60" y="186" font-family="monospace" font-size="10" fill="#4ecdc4" font-weight="700">STATUS: HARDENED</text>
+</svg>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Sohan | Aspiring SOC analyst. Detection engineering, SIEM monitoring, and defensive security. This portfolio is a live security console — every number on it is real data from the content files.</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Sohan" />
+<meta name="author" content="MD Sohanuzzaman Shanto" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Aspiring SOC analyst. Detection engineering, SIEM monitoring, and defensive security. This portfolio is a live security console — every number on it is real data from the content files." />
+<meta name="twitter:description" property="og:description" content="Aspiring SOC analyst. Detection engineering, SIEM monitoring, and defensive security. This portfolio is a live security console — every number on it is real data from the content files." />
+<link rel="canonical" href="https://sohanuzzaman3301.github.io/" />
+<meta property="og:url" content="https://sohanuzzaman3301.github.io/" />
+<meta property="og:site_name" content="Sohan" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Sohan" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"MD Sohanuzzaman Shanto"},"description":"Aspiring SOC analyst. Detection engineering, SIEM monitoring, and defensive security. This portfolio is a live security console — every number on it is real data from the content files.","headline":"Sohan","name":"Sohan","url":"https://sohanuzzaman3301.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070d'/%3E%3Ctext x='4' y='22' font-family='monospace' font-size='16' fill='%2300ff9c'%3E%26gt;_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      var theme = stored || (prefersLight ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">skip to content</a>
+  <nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a class="nav__brand" href="/"><span class="prompt">[~]$</span> sohan</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">menu</button>
+    <ul class="nav__menu" id="nav-menu">
+      <li><a href="/" aria-current="page">HOME</a></li>
+      <li><a href="/projects/" >PROJECTS</a></li>
+      <li><a href="/certifications/" >CERTS</a></li>
+      <li><a href="/writeups/" >WRITEUPS</a></li>
+      <li><a href="/blog/" >BLOG</a></li>
+      <li><a href="/about/" >ABOUT</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle day/night mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="status" role="status">
+    <span class="status__item">CERTS: 3</span>
+    <span class="status__item">PROJECTS: 6</span>
+    <span class="status__item">WRITEUPS: 1</span>
+  </div>
+</nav>
+
+  <main id="main"><div class="log-stream" aria-hidden="true">
+  <div class="log-stream__inner" data-logstream></div>
+</div>
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero__terminal" data-boot>
+    <div class="hero__bar">
+      <span class="hero__dot hero__dot--r" aria-hidden="true"></span>
+      <span class="hero__dot hero__dot--y" aria-hidden="true"></span>
+      <span class="hero__dot hero__dot--g" aria-hidden="true"></span>
+      <span class="hero__title">sohan@portfolio: ~</span>
+    </div>
+    <div class="hero__body">
+      <p class="hero__line hero__line--big" data-boot>SOHAN</p>
+      <p class="hero__line hero__line--role" data-boot>SOC ANALYST · DETECTION ENGINEERING · DEFENSIVE SECURITY</p>
+      <p class="hero__line hero__line--dim" data-boot>3 certifications · 6 projects · 1 writeups</p>
+      <p class="hero__line hero__line--status">OPEN TO OPPORTUNITIES</p>
+    </div>
+  </div>
+  <div class="hero__radar" aria-hidden="true"><canvas id="radar" width="180" height="180"></canvas></div>
+</section>
+
+
+<section class="section anim-fade" id="about" style="animation-delay: 0.1s">
+  <h2 class="section__title"><span class="prompt">$</span> whoami</h2>
+  <p class="section__lead">Aspiring SOC analyst focused on detection engineering and defensive security. B.Eng in Computer Science from Wuhan Institute of Technology. I build detection logic, hunt through logs, and study how attacks move. Every number on this site is real data from the content files — nothing is hardcoded.</p>
+  <ul class="skill-list">
+    
+      <li class="chip chip--skill">SIEM & Log Analysis</li>
+    
+      <li class="chip chip--skill">Threat Detection</li>
+    
+      <li class="chip chip--skill">Incident Response</li>
+    
+      <li class="chip chip--skill">Splunk</li>
+    
+      <li class="chip chip--skill">Elastic Stack</li>
+    
+      <li class="chip chip--skill">Wireshark</li>
+    
+      <li class="chip chip--skill">Python</li>
+    
+      <li class="chip chip--skill">Bash</li>
+    
+      <li class="chip chip--skill">Linux</li>
+    
+  </ul>
+</section>
+
+<section class="section anim-fade" id="projects" style="animation-delay: 0.2s">
+  <h2 class="section__title"><span class="prompt">$</span> cat projects --featured</h2>
+  <div class="cards">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card" data-href="https://github.com/Sohanuzzaman3301/SIEM_Home_Lab" data-external="true">
+  
+  <div class="card__image">
+    <img src="/assets/images/siem-homelab-topology.png" alt="SIEM Home Lab" loading="lazy">
+  </div>
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    SIEM Home Lab
+    </h3>
+    <p class="card__meta">
+      
+      
+        
+        2026-08-20
+       · wazuh · suricata · sysmon · qemu · kali · 
+    </p>
+    <p class="card__body">Multi-VM SOC lab with Wazuh Manager (Ubuntu), Windows 10 endpoint with Sysmon, and Kali attacker host on isolated NAT via QEMU/KVM. File Integrity Monitoring across /etc, /var/www/html, and Windows system folders with real-time alerting. Simulated attacks — HTTP brute-force (Hydra), encoded PowerShell payloads, Nmap scanning — mapped to MITRE ATT&CK. Custom Wazuh detection rules with severity tuning, Suricata IDS dashboards for alert triage.</p>
+    
+    
+    <p class="card__links"><a href="https://github.com/Sohanuzzaman3301/SIEM_Home_Lab">repo</a></p>
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card" data-href="https://github.com/Sohanuzzaman3301/safeline-waf-homelab" data-external="true">
+  
+  <div class="card__image">
+    <img src="/assets/images/projects/safeline-network-topology.png" alt="SafeLine WAF HomeLab" loading="lazy">
+  </div>
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    SafeLine WAF HomeLab
+    </h3>
+    <p class="card__meta">
+      
+      
+        
+        2026-07-15
+       · qemu · kvm · safeline · dvwa · kali · 
+    </p>
+    <p class="card__body">Isolated QEMU/KVM lab with SafeLine WAF in reverse-proxy mode protecting a DVWA target. Validated against sqlmap SQLi, reflected XSS, and hydra brute-force from Kali — all malicious traffic blocked, zero false positives. Detection policies, rate limiting, and log tuning documented with full topology and attack evidence.</p>
+    
+    
+    <p class="card__links"><a href="https://github.com/Sohanuzzaman3301/safeline-waf-homelab">repo</a></p>
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card" data-href="https://github.com/Sohanuzzaman3301/password-strengh-meter" data-external="true">
+  
+  <div class="card__image">
+    <img src="/assets/images/password-meter.svg" alt="Password Strength Meter" loading="lazy">
+  </div>
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    Password Strength Meter
+    </h3>
+    <p class="card__meta">
+      
+      
+        
+        2026-06-05
+       · astro · javascript · css · 
+    </p>
+    <p class="card__body">Client-side password strength estimator and leak checker. Estimates entropy and likely crack times with a zxcvbn-inspired approach; k-anonymity "Have I Been Pwned" checks run entirely in the browser so plaintext passwords are never transmitted. CI deploys to Cloudflare Pages.</p>
+    
+    
+    <p class="card__links"><a href="https://github.com/Sohanuzzaman3301/password-strengh-meter">repo</a> · <a href="https://dd3b2174.password-strength-meter.pages.dev/">live</a></p>
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+  </div>
+  <p class="section__more"><a href="/projects/">view all projects →</a></p>
+</section>
+
+<section class="section anim-fade" id="certifications" style="animation-delay: 0.3s">
+  <h2 class="section__title"><span class="prompt">$</span> cat certifications --all</h2>
+  <div class="cards cards--certs">
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card card--evidence card--issuer-google" data-href="https://www.credly.com/badges/ed2ab68a-c056-4cd1-a293-82a4d2422a44/public_url" data-external="true">
+  
+    
+    <div class="card__issuer-logo">
+      <a href="https://www.credly.com/badges/ed2ab68a-c056-4cd1-a293-82a4d2422a44/public_url" target="_blank" rel="noopener" aria-label="View Google Cybersecurity Professional Certificate certificate">
+        <img src="/assets/images/certificates/google-logo-color-512.png" alt="" loading="lazy" aria-hidden="true">
+      </a>
+    </div>
+    
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    Google Cybersecurity Professional Certificate
+    </h3>
+    <p class="card__meta">
+      
+        <span class="chip chip--issuer chip--issuer-google">Google</span>
+      
+      
+        
+        2025-09-01
+       · 
+        
+          <span class="chip chip--type chip--cert">CERT</span>
+        
+      
+    </p>
+    <p class="card__body"><p>Google Career Certificate covering security foundations, network security, and incident response. Verified via Credly badge.</p>
+</p>
+    
+      <p class="card__credential">
+        <span class="credential-id" title="ed2ab68a-c056-4cd1-a293-82a4d2422a44">ID: ed2ab68a-c056...</span>
+      </p>
+    
+    <p class="card__links"><a href="https://www.credly.com/badges/ed2ab68a-c056-4cd1-a293-82a4d2422a44/public_url" target="_blank" rel="noopener">verify →</a></p>
+    
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card card--evidence card--issuer-google" data-href="https://www.credly.com/badges/98cc58ec-2e39-4863-938f-b5c895a6dcb8/public_url" data-external="true">
+  
+    
+    <div class="card__issuer-logo">
+      <a href="https://www.credly.com/badges/98cc58ec-2e39-4863-938f-b5c895a6dcb8/public_url" target="_blank" rel="noopener" aria-label="View Google IT Support Professional Certificate certificate">
+        <img src="/assets/images/certificates/google-logo-color-512.png" alt="" loading="lazy" aria-hidden="true">
+      </a>
+    </div>
+    
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    Google IT Support Professional Certificate
+    </h3>
+    <p class="card__meta">
+      
+        <span class="chip chip--issuer chip--issuer-google">Google</span>
+      
+      
+        
+        2025-11-01
+       · 
+        
+          <span class="chip chip--type chip--cert">CERT</span>
+        
+      
+    </p>
+    <p class="card__body"><p>IT fundamentals: troubleshooting, networking, operating systems, and security. Verified via Credly badge.</p>
+</p>
+    
+      <p class="card__credential">
+        <span class="credential-id" title="98cc58ec-2e39-4863-938f-b5c895a6dcb8">ID: 98cc58ec-2e39...</span>
+      </p>
+    
+    <p class="card__links"><a href="https://www.credly.com/badges/98cc58ec-2e39-4863-938f-b5c895a6dcb8/public_url" target="_blank" rel="noopener">verify →</a></p>
+    
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card card--evidence card--issuer-tryhackme" data-href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXIMKAYVCK.pdf" data-external="true">
+  
+    
+    <div class="card__issuer-logo">
+      <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXIMKAYVCK.pdf" target="_blank" rel="noopener" aria-label="View SOC Level 1 certificate">
+        <img src="/assets/images/certificates/tryhackme-logo-color-512.png" alt="" loading="lazy" aria-hidden="true">
+      </a>
+    </div>
+    
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    SOC Level 1
+    </h3>
+    <p class="card__meta">
+      
+        <span class="chip chip--issuer chip--issuer-tryhackme">TryHackMe</span>
+      
+      
+        
+        2026-03-01
+       · 
+        
+          <span class="chip chip--type chip--cert">CERT</span>
+        
+      
+    </p>
+    <p class="card__body"><p>SOC Level 1 track: alert triage, threat detection, and log analysis across Windows and Linux with Splunk, Elastic Stack, Sysmon, Zeek, and Wazuh.</p>
+</p>
+    
+      <p class="card__credential">
+        <span class="credential-id" title="THM-NXIMKAYVCK">ID: THM-NXIMKAYVCK</span>
+      </p>
+    
+    <p class="card__links"><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXIMKAYVCK.pdf" target="_blank" rel="noopener">verify →</a></p>
+    
+  </div>
+  
+  <span class="card__external-indicator" aria-hidden="true">↗</span>
+  
+</article>
+
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card card--evidence card--issuer-wuhan-institute-of-technology" data-href="/cybercerts/uni/scholarship_winning_certificate.pdf">
+  
+    
+    <div class="card__issuer-logo">
+      <a href="/cybercerts/uni/scholarship_winning_certificate.pdf"  aria-label="View First-Class Scholarship Certificate certificate">
+        <img src="/assets/images/certificates/wit-logo-512.png" alt="" loading="lazy" aria-hidden="true">
+      </a>
+    </div>
+    
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    First-Class Scholarship Certificate
+    </h3>
+    <p class="card__meta">
+      
+        <span class="chip chip--issuer chip--issuer-wuhan-institute-of-technology">Wuhan Institute of Technology</span>
+      
+      
+        
+        2025-10-01
+       · 
+        
+          <span class="chip chip--type chip--award">AWARD</span>
+        
+      
+    </p>
+    <p class="card__body"><p>Academic excellence award for first-class honors in Computer Science and Technology, ranked 1st in batch 2025.</p>
+</p>
+    
+    <p class="card__links"><a href="/cybercerts/uni/scholarship_winning_certificate.pdf">verify →</a></p>
+    
+  </div>
+  
+</article>
+
+    
+  </div>
+</section>
+
+<section class="section anim-fade" id="blog" style="animation-delay: 0.4s">
+  <h2 class="section__title"><span class="prompt">$</span> tail -3 blog</h2>
+  <div class="cards">
+    
+      
+
+
+
+
+
+
+
+
+
+
+<article class="card">
+  
+  <div class="card__content">
+    <h3 class="card__title">
+      
+    Building a Home SOC Lab
+    </h3>
+    <p class="card__meta">
+      
+      
+        
+        2026-08-19
+       · soc · lab
+    </p>
+    <p class="card__body"><p>Setting up a home security operations center to practice alert triage and log analysis. Using Wazuh, Elastic Stack, and a DVWA target to simulate real detection scenarios.</p>
+</p>
+    
+    
+    
+  </div>
+  
+</article>
+
+    
+  </div>
+  <p class="section__more"><a href="/blog/">view all posts →</a></p>
+</section>
+</main>
+  <footer class="footer anim-fade" style="animation-delay: 0.5s">
+  <div class="footer__inner">
+    <div class="footer__connect">
+      <a href="mailto:md.sohanuzzaman@proton.me" class="footer__icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+      </a>
+      <a href="https://github.com/sohanuzzaman3301" class="footer__icon" aria-label="GitHub" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/sohanuzzaman3301" class="footer__icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://tryhackme.com/p/HiddenV1rus" class="footer__icon" aria-label="TryHackMe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v6c0 5.25 3.75 10.05 9 11 5.25-.95 9-5.75 9-11V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </a>
+    </div>
+    <p class="footer__credit">2026 MD Sohanuzzaman Shanto</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
