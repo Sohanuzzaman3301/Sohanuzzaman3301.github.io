@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Not found · MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
+<title>SafeLine WAF HomeLab — DVWA Protection · MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
 <meta name="description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
@@ -12,21 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>:root{--font-heading:'Sora',system-ui,sans-serif !important; --font-body:'Source Sans 3',system-ui,sans-serif !important; --font-mono:'IBM Plex Mono',monospace !important; --font-display:'Sora',system-ui,sans-serif !important} h1,h2,h3,h4{font-family:'Sora',sans-serif !important} body,p{font-family:'Source Sans 3',sans-serif !important} .mono,pre,code{font-family:'IBM Plex Mono',monospace !important}</style>
 <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Not found | MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
+<title>SafeLine WAF HomeLab — DVWA Protection | MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Not found" />
+<meta property="og:title" content="SafeLine WAF HomeLab — DVWA Protection" />
 <meta name="author" content="MD Sohanuzzaman Shanto" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research." />
-<meta name="twitter:description" property="og:description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research." />
-<link rel="canonical" href="http://localhost:4000/404.html" />
-<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta name="description" content="Reverse-proxy WAF protecting DVWA — validated against SQLi, XSS, brute-force with zero false positives." />
+<meta name="twitter:description" property="og:description" content="Reverse-proxy WAF protecting DVWA — validated against SQLi, XSS, brute-force with zero false positives." />
+<link rel="canonical" href="http://localhost:4000/projects/safeline-waf-lab/" />
+<meta property="og:url" content="http://localhost:4000/projects/safeline-waf-lab/" />
 <meta property="og:site_name" content="MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Not found" />
+<meta property="og:image" content="http://localhost:4000/assets/images/projects/safeline-network-topology-800.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-29T21:04:00+00:00" />
+<meta property="article:modified_time" content="2026-08-29T21:04:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:4000/assets/images/projects/safeline-network-topology-800.png" />
+<meta name="twitter:title" content="SafeLine WAF HomeLab — DVWA Protection" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"MD Sohanuzzaman Shanto"},"description":"SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research.","headline":"Not found","url":"http://localhost:4000/404.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MD Sohanuzzaman Shanto"},"dateModified":"2026-08-29T21:04:00+00:00","datePublished":"2026-08-29T21:04:00+00:00","description":"Reverse-proxy WAF protecting DVWA — validated against SQLi, XSS, brute-force with zero false positives.","headline":"SafeLine WAF HomeLab — DVWA Protection","image":"http://localhost:4000/assets/images/projects/safeline-network-topology-800.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/safeline-waf-lab/"},"url":"http://localhost:4000/projects/safeline-waf-lab/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -74,7 +78,23 @@
   </div>
 </nav>
 
-<section class="section"><h2>404 — Not found</h2><p class="sub">That page doesn’t exist. Try <a href="/">home</a>, <a href="/#projects">work</a>, or <a href="/#writeups">writeups</a>.</p></section>
+<section class="section">
+  <a href="/#projects" class="mono" style="font-size:12px;color:var(--fog)">← Back to projects</a>
+  <h1 style="margin-top:16px">SafeLine WAF HomeLab — DVWA Protection</h1>
+  <p class="sub">Reverse-proxy WAF protecting DVWA — validated against SQLi, XSS, brute-force with zero false positives.</p>
+  <img src="/assets/images/projects/safeline-network-topology-800.png" alt="SafeLine WAF HomeLab — DVWA Protection" style="width:100%;max-height:400px;object-fit:cover;border-radius:8px;border:1px solid var(--lavender);margin:16px 0">
+  <div style="font-size:14px;line-height:1.8;color:var(--slate)"><p>Deployed SafeLine WAF in reverse-proxy mode protecting DVWA. Validated detection against SQL Injection, XSS, and brute-force attacks with zero false positives on initial policy.</p>
+
+<p>Configured detection policies and rate-limiting rules, performed log analysis to tune false positives and documented network topology for reproducibility.</p>
+
+<p><strong>What you see:</strong> reverse-proxy topology, WAF policy config, attack validation logs.</p>
+</div>
+  <p class="meta mono" style="margin-top:16px">SafeLine WAF · DVWA · Kali</p>
+  <div class="links" style="margin-top:8px">
+    <a href="https://github.com/Sohanuzzaman3301/safeline-waf-homelab">GitHub →</a>
+    <a href="">Writeup →</a>
+  </div>
+</section>
 
 <footer class="footer"><span class="mono">© 2026 Sohanuzzaman Shanto — Built with Jekyll</span><span>
   

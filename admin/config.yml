@@ -1,0 +1,72 @@
+backend:
+  name: github
+  branch: main
+  repo: alex-sec/portfolio
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "profile"
+    label: "Profile"
+    files:
+      - label: "Site Profile"
+        name: "profile"
+        file: "_data/profile.yml"
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: "Hero Title", name: hero_title, widget: string}
+          - {label: "Hero Desc", name: hero_desc, widget: text}
+          - {label: Lab, name: lab, widget: string}
+          - {label: Rank, name: rank, widget: string}
+          - {label: Next, name: next, widget: string}
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Tag, name: tag, widget: string, hint: "LAB-001 style"}
+      - {label: Image, name: image, widget: image, required: false}
+      - {label: Description, name: description, widget: text}
+      - {label: Tech, name: tech, widget: string}
+      - {label: GitHub, name: github, widget: string, required: false}
+      - {label: Writeup, name: writeup, widget: string, required: false}
+      - {label: Body, name: body, widget: markdown}
+  - name: "writeups"
+    label: "Writeups"
+    folder: "_writeups"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Category, name: category, widget: string}
+      - {label: Tags, name: tags, widget: list}
+      - {label: Read Time, name: read_time, widget: string}
+      - {label: Excerpt, name: excerpt, widget: text}
+      - {label: Body, name: body, widget: markdown}
+  - name: "experience"
+    label: "Experience"
+    folder: "_experience"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Org, name: org, widget: string}
+      - {label: Date Range, name: date_range, widget: string}
+      - {label: Order, name: order, widget: number}
+      - {label: Bullets, name: bullets, widget: list}
+  - name: "certs"
+    label: "Certifications"
+    folder: "_certs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Status, name: status, widget: select, options: ["Completed", "In Progress"]}
+      - {label: Issued, name: issued, widget: string}
+      - {label: Verify URL, name: verify_url, widget: string}
+      - {label: Verify Label, name: verify_label, widget: string}
+      - {label: Order, name: order, widget: number}

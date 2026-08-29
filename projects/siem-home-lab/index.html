@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Not found · MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
+<title>SIEM Home Lab — Wazuh + Suricata + Sysmon · MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
 <meta name="description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
@@ -12,21 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>:root{--font-heading:'Sora',system-ui,sans-serif !important; --font-body:'Source Sans 3',system-ui,sans-serif !important; --font-mono:'IBM Plex Mono',monospace !important; --font-display:'Sora',system-ui,sans-serif !important} h1,h2,h3,h4{font-family:'Sora',sans-serif !important} body,p{font-family:'Source Sans 3',sans-serif !important} .mono,pre,code{font-family:'IBM Plex Mono',monospace !important}</style>
 <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Not found | MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
+<title>SIEM Home Lab — Wazuh + Suricata + Sysmon | MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Not found" />
+<meta property="og:title" content="SIEM Home Lab — Wazuh + Suricata + Sysmon" />
 <meta name="author" content="MD Sohanuzzaman Shanto" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research." />
-<meta name="twitter:description" property="og:description" content="SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research." />
-<link rel="canonical" href="http://localhost:4000/404.html" />
-<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta name="description" content="3-VM SOC lab on isolated NAT — Wazuh FIM, Suricata IDS, 15+ attacks mapped to 20+ MITRE ATT&amp;CK techniques." />
+<meta name="twitter:description" property="og:description" content="3-VM SOC lab on isolated NAT — Wazuh FIM, Suricata IDS, 15+ attacks mapped to 20+ MITRE ATT&amp;CK techniques." />
+<link rel="canonical" href="http://localhost:4000/projects/siem-home-lab/" />
+<meta property="og:url" content="http://localhost:4000/projects/siem-home-lab/" />
 <meta property="og:site_name" content="MD Sohanuzzaman Shanto — Aspiring Cybersecurity Professional" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Not found" />
+<meta property="og:image" content="http://localhost:4000/assets/images/siem-homelab-topology.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-29T21:04:00+00:00" />
+<meta property="article:modified_time" content="2026-08-29T21:04:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:4000/assets/images/siem-homelab-topology.png" />
+<meta name="twitter:title" content="SIEM Home Lab — Wazuh + Suricata + Sysmon" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"MD Sohanuzzaman Shanto"},"description":"SOC Analyst in training — SIEM Home Lab (Wazuh/Suricata/Sysmon), SafeLine WAF, EMBER2024 malware research.","headline":"Not found","url":"http://localhost:4000/404.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MD Sohanuzzaman Shanto"},"dateModified":"2026-08-29T21:04:00+00:00","datePublished":"2026-08-29T21:04:00+00:00","description":"3-VM SOC lab on isolated NAT — Wazuh FIM, Suricata IDS, 15+ attacks mapped to 20+ MITRE ATT&amp;CK techniques.","headline":"SIEM Home Lab — Wazuh + Suricata + Sysmon","image":"http://localhost:4000/assets/images/siem-homelab-topology.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/siem-home-lab/"},"url":"http://localhost:4000/projects/siem-home-lab/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -74,7 +78,25 @@
   </div>
 </nav>
 
-<section class="section"><h2>404 — Not found</h2><p class="sub">That page doesn’t exist. Try <a href="/">home</a>, <a href="/#projects">work</a>, or <a href="/#writeups">writeups</a>.</p></section>
+<section class="section">
+  <a href="/#projects" class="mono" style="font-size:12px;color:var(--fog)">← Back to projects</a>
+  <h1 style="margin-top:16px">SIEM Home Lab — Wazuh + Suricata + Sysmon</h1>
+  <p class="sub">3-VM SOC lab on isolated NAT — Wazuh FIM, Suricata IDS, 15+ attacks mapped to 20+ MITRE ATT&CK techniques.</p>
+  <img src="/assets/images/siem-homelab-topology.png" alt="SIEM Home Lab — Wazuh + Suricata + Sysmon" style="width:100%;max-height:400px;object-fit:cover;border-radius:8px;border:1px solid var(--lavender);margin:16px 0">
+  <div style="font-size:14px;line-height:1.8;color:var(--slate)"><p>Built 3-VM SOC lab (Wazuh manager, Sysmon endpoint, Kali attacker) on isolated NAT network. Deployed File Integrity Monitoring across system folders with real-time alerting and tuned custom Wazuh rules.</p>
+
+<p>Simulated 15+ attack scenarios (Hydra brute-force, PowerShell, Nmap) and mapped detections to 20+ MITRE ATT&amp;CK techniques. Configured Suricata IDS and built dashboards for alert triage and incident investigation.</p>
+
+<p><strong>What you see:</strong> topology diagram, Wazuh rule YAML, Suricata config, dashboard screenshots.</p>
+
+<p><strong>Learned:</strong> Wazuh rule tuning, Suricata IDS deployment, MITRE mapping for analyst workflows.</p>
+</div>
+  <p class="meta mono" style="margin-top:16px">Wazuh · Suricata · Sysmon · Kali</p>
+  <div class="links" style="margin-top:8px">
+    <a href="https://github.com/Sohanuzzaman3301/SIEM_Home_Lab">GitHub →</a>
+    <a href="">Writeup →</a>
+  </div>
+</section>
 
 <footer class="footer"><span class="mono">© 2026 Sohanuzzaman Shanto — Built with Jekyll</span><span>
   
