@@ -53,16 +53,17 @@ a{color:var(--sst-ink);text-decoration:none}
 @media(min-width:768px){.hero{flex-direction:row;align-items:center;gap:256px}}
 .hero-text{text-align:center;width:100%}
 @media(min-width:768px){.hero-text{text-align:left;width:50%;align-self:center}}
-.hero-text h1{font-family:'Poppins',system-ui,sans-serif;font-size:clamp(36px,8vw,48px);font-weight:800;line-height:1.05;letter-spacing:-0.03em;color:#2d2e32;margin-bottom:16px;overflow-wrap:break-word;word-wrap:break-word}
-.hero-title{display:inline-flex;align-items:baseline;gap:0.25em}
+.hero-text h1{font-family:'Poppins',system-ui,sans-serif;font-size:clamp(36px,8vw,48px);font-weight:800;line-height:1.05;letter-spacing:-0.03em;color:#2d2e32;margin-bottom:16px;overflow-wrap:break-word;word-wrap:break-word;min-width:520px}
+.hero-title{display:inline-flex;align-items:baseline;gap:0.25em;min-width:0}
 .hero-role{display:inline-block}
-.hero-title-static.hero-role-dynamic{border-right:2px solid var(--sst-ink);padding-right:2px}
+.hero-title-static.hero-role-dynamic{border-right:2px solid var(--sst-ink);padding-right:2px;display:inline-block;white-space:nowrap}
 @keyframes blink{0%,100%{border-color:var(--sst-ink)}50%{border-color:transparent}}
 .hero-text > .hero-role-dynamic{display:none;}
 .hero-title-dynamic{display:inline-block}
 .hero-title-dynamic::after{content:''}
 @media (prefers-reduced-motion: reduce){.hero-title-dynamic{transition:none!important;animation:none!important}}
 @media(min-width:768px){.hero-text h1{font-size:48px}}
+@media(max-width:767px){.hero-text h1{min-width:0}}
 .hero-text p{font-size:18px;color:#2d2e32;line-height:1.7;max-width:720px;margin:0 auto 24px;font-weight:400}
 @media(min-width:768px){.hero-text p{margin:0 0 24px;font-size:20px}}
 .hero-social{display:flex;gap:16px;justify-content:center;align-items:center}
@@ -71,8 +72,8 @@ a{color:var(--sst-ink);text-decoration:none}
 .hero-social .social-link:hover{color:var(--code-cobalt)}
 .hero-social .social-link svg{width:28px;height:28px}
 .hero-social .social-link span{font-size:16px;font-weight:600}
-.hero-image{width:100%;display:flex;justify-content:center}
-@media(min-width:768px){.hero-image{width:50%;justify-content:flex-start}}
+.hero-image{width:100%;display:flex;justify-content:center;flex-shrink:0}
+@media(min-width:768px){.hero-image{width:50%;justify-content:flex-start;flex-shrink:0}}
 #selfie{width:300px;height:400px;background-image:url('/assets/images/hero.png');background-size:cover;background-position:center;border:3px solid var(--code-cobalt);border-radius:60% 40% 30% 70%/60% 30% 70% 40%;animation:morph 8s ease-in-out infinite;transition:all 1s ease-in-out}
 @keyframes morph{0%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%}to{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}}
 .proof{max-width:var(--max);margin:0 auto;padding:24px;text-align:center;border-top:1px solid var(--lavender);border-bottom:1px solid var(--lavender)}
