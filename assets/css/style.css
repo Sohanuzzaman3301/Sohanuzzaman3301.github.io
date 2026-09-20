@@ -13,7 +13,7 @@ a{color:var(--sst-ink);text-decoration:none}
 .mono{font-family:var(--font-mono);letter-spacing:-0.021em}
 .nav{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--lavender);z-index:10}
 .nav-inner{width:100%;margin:0 auto;height:60px;display:flex;align-items:center;gap:32px;padding:0 48px}
-.logo{font-family:'Poppins',system-ui,sans-serif;font-weight:800;font-size:16px;letter-spacing:-0.02em;display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.logo{font-family:'Poppins',system-ui,sans-serif;font-weight:800;font-size:26px;letter-spacing:-0.02em;display:flex;align-items:center;gap:12px;flex:0 0 auto;color:#1770b5}
 .logo .profile-photo{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--lavender)}
 .logo .logo-text{display:flex;align-items:center;gap:8px}
 .logo img.logo-mark{width:26px;height:26px;display:inline-block;vertical-align:middle}
