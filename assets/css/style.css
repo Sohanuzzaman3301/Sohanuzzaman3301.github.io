@@ -56,7 +56,7 @@ a{color:var(--sst-ink);text-decoration:none}
 .hero-text h1{font-family:'Poppins',system-ui,sans-serif;font-size:clamp(36px,8vw,48px);font-weight:800;line-height:1.05;letter-spacing:-0.03em;color:#2d2e32;margin-bottom:16px;overflow-wrap:break-word;word-wrap:break-word}
 .hero-title{display:inline-flex;align-items:baseline;gap:0.25em}
 .hero-role{display:inline-block}
-.hero-title-static.hero-role-dynamic{border-right:2px solid var(--sst-ink);padding-right:2px;animation:blink 1s step-end infinite}
+.hero-title-static.hero-role-dynamic{border-right:2px solid var(--sst-ink);padding-right:2px}
 @keyframes blink{0%,100%{border-color:var(--sst-ink)}50%{border-color:transparent}}
 .hero-text > .hero-role-dynamic{display:none;}
 .hero-title-dynamic{display:inline-block}
